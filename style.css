@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(75, 75, 148);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  div{
+    position: relative;
+    top: 365px;
+    color: aqua;
+    font-weight: bold;
+    font-size: 35px;  
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #E50914;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, text-shadow 0.2s;
+    cursor: pointer;
+  }
+  div:hover{
+    transform: scale(1.1);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Change shadow on hover */
+    color: rgb(64, 238, 16);
+  }
+  
+  text {
+    fill: white;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 6px;
+    animation: rotate 15s linear infinite;
+    transform-origin: 250px 250px;
+  }
+  
+  svg{
+    max-width: 80vmin;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .textcircle {
+    transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    transform-origin: 250px 250px;
+    
+  }
+  
+  svg:hover .textcircle {
+    transform: scale(1.2) rotate(90deg);
+  }
